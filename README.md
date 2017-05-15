@@ -1,9 +1,11 @@
 # 学习总结
 
+## Object
+
 ## 基础
 
 ### 一、操作符
-* 位操作符总结
+* 位操作符总结（>>>）
 
 ### 二、包装类常用方法汇总
 * Integer
@@ -20,9 +22,6 @@
 * TreeSet
 * Queue
 * Stack
-* ConcurrentHashMap
-* CopyOnWriteArrayList
-* CopyOnWriteArraySet
 * WeakHashMap
 * Fail-Fast原理
 * 红黑树
@@ -33,7 +32,32 @@
 * NIO
 * IO多路复用机制详解
 
-### 五、多线程：线程池定义、使用、常用类、常用方法、优缺点
+### 五、多线程
+* Java内存模型
+* 线程通信
+* 多线程同步
+* Java线程池
+* Runnable
+* Callable
+* AtomicBoolean
+* AtomicInteger
+* AtomicReference
+* Lock
+* Condition
+* ReentrantLock
+* ReentrantReadWriteLock
+* BlockingQueue
+* ConcurrentHashMap
+* CopyOnWriteArrayList
+* CopyOnWriteArraySet
+* CountDownLatch
+* CyclicBarrier
+* Exchanger
+* Semaphore
+* Executors
+
+
+
 
 ### 六、JVM
 * JVM内存结构模型
@@ -46,6 +70,7 @@
 ### 七、类加载
 * ClassLoader
 * 类加载时机与过程
+* 反射内省
 
 
 ## Linux
