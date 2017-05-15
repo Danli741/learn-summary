@@ -3,8 +3,29 @@
 ## 基础
 
 ### 一、位操作符：>>>
-### 二、包装类方法：Integer、Long、String
-### 三、集合：ArrayList、LinkedList、HashMap、TreeMap、HashSet、TreeSet、Queue、Stack、Concurrent
+
+### 二、包装类常用方法汇总
+* Integer
+* Long
+* String
+
+### 三、集合：
+* ArrayList
+* LinkedList
+* HashMap
+* LinkedHashMap
+* TreeMap
+* HashSet
+* TreeSet
+* Queue
+* Stack
+* ConcurrentHashMap
+* CopyOnWriteArrayList
+* CopyOnWriteArraySet
+* WeakHashMap
+* Fail-Fast原理
+* 红黑树
+
 ### 四、IO：字节流、字符流、NIO
 ### 五、多线程：线程池定义、使用、常用类、常用方法、化缺点
 ### 六、JVM
