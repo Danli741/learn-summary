@@ -32,8 +32,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8696884" vertical-offset="787" max-vertical-offset="1470">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.8725212" vertical-offset="322" max-vertical-offset="1620">
+              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -690,12 +690,12 @@
       <updated>1494863189200</updated>
       <workItem from="1494863193800" duration="4000" />
       <workItem from="1494863202989" duration="2622000" />
-      <workItem from="1494865835657" duration="2124000" />
+      <workItem from="1494865835657" duration="2450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4750000" />
+    <option name="totallyTimeSpent" value="5076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -818,8 +818,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8696884" vertical-offset="787" max-vertical-offset="1470">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.8725212" vertical-offset="322" max-vertical-offset="1620">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
           <folding />
         </state>
       </provider>
