@@ -20,17 +20,17 @@ equals方法
 
 Java语言对equals方法的要求如下:
 
-     1. 对称性：如果x.equals(y)返回是“true”，那么y.equals(x)也应该返回是“true”。<br/>
-     2. 反射性：x.equals(x)必须返回是“true”。<br/>
-     3. 类推性：如果x.equals(y)返回是“true”，而且y.equals(z)返回是“true”，那么z.equals(x)也应该返回是“true”。<br/>
-     4. 一致性：如果x.equals(y)返回是“true”，只要x和y内容一直不变，不管你重复x.equals(y)多少次，返回都是“true”。<br/>
-     5. 任何情况下，x.equals(null)，永远返回是“false”；x.equals(和x不同类型的对象)永远返回是“false”。<br/>
+     1. 对称性：如果x.equals(y)返回是“true”，那么y.equals(x)也应该返回是“true”。
+     2. 反射性：x.equals(x)必须返回是“true”。
+     3. 类推性：如果x.equals(y)返回是“true”，而且y.equals(z)返回是“true”，那么z.equals(x)也应该返回是“true”。
+     4. 一致性：如果x.equals(y)返回是“true”，只要x和y内容一直不变，不管你重复x.equals(y)多少次，返回都是“true”。
+     5. 任何情况下，x.equals(null)，永远返回是“false”；x.equals(和x不同类型的对象)永远返回是“false”。
 
 
 eqauls方法和hashCode方法
 
-      1. 如果两个对象相同，那么它们的hashCode值一定要相同；<br/>
-      2. 如果两个对象的hashCode相同，它们并不一定相同（这里说的对象相同指的是用eqauls方法比较）。<br/>
+      1. 如果两个对象相同，那么它们的hashCode值一定要相同。
+      2. 如果两个对象的hashCode相同，它们并不一定相同（这里说的对象相同指的是用eqauls方法比较）。
       
       
 [参考文章](http://bijian1013.iteye.com/blog/1972404)
