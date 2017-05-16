@@ -26,8 +26,8 @@
       <file leaf-file-name="Object类方法.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/基础/Object/Object类方法.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7580645" vertical-offset="153" max-vertical-offset="615">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.43548387" vertical-offset="138" max-vertical-offset="630">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -527,12 +527,12 @@
       <changelist id="6e78ebb5-bb73-49f4-9415-671295b9efe0" name="Default" comment="" />
       <created>1494950365580</created>
       <updated>1494950365580</updated>
-      <workItem from="1494950366289" duration="3844000" />
+      <workItem from="1494950366289" duration="3961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3844000" />
+    <option name="totallyTimeSpent" value="3961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -601,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/基础/Object/Object类方法.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7580645" vertical-offset="153" max-vertical-offset="615">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.43548387" vertical-offset="138" max-vertical-offset="630">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

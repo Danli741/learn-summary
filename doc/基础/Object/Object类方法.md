@@ -12,11 +12,12 @@ Object类有12个成员方法
     void wait(long timeout)             //导致当前的线程等待，直到其他线程调用此对象的 notify() 方法或notifyAll() 方法，或者超过指定的时间量。
     void wait(long timeout, int nanos)  //导致当前的线程等待，直到其他线程调用此对象的notify() 方法或 notifyAll() 方法，或者其他某个线程中断当前线程，或者已超过某个实际时间量。
     
-equals方法
+equals方法默认实现
 > 
     public boolean equals(Object obj) {  
       return (this == obj);
     } 
+
 
 Java语言对equals方法的要求如下:
 
