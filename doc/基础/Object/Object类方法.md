@@ -1,5 +1,5 @@
 Object类有12个成员方法
-> java
+> 
     protected Object clone() //创建并返回此对象的一个副本。<br/>
     boolean equals(Object obj) //指示某个其他对象是否与此对象“相等”。<br/>
     protected void finalize() //当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。<br/>
