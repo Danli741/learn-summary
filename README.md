@@ -1,6 +1,7 @@
 # 学习总结
 
 ## Object
+* [Object类方法](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/Object/Object%E7%B1%BB%E6%96%B9%E6%B3%95.md)
 
 ## 基础
 
