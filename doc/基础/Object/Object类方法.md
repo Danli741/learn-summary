@@ -18,7 +18,8 @@ equals方法
       return (this == obj);
     } 
 
-Java语言对equals方法的要求如下，这些要求是必须遵循的：
+Java语言对equals方法的要求如下:
+
      1. 对称性：如果x.equals(y)返回是“true”，那么y.equals(x)也应该返回是“true”。<br/>
      2. 反射性：x.equals(x)必须返回是“true”。<br/>
      3. 类推性：如果x.equals(y)返回是“true”，而且y.equals(z)返回是“true”，那么z.equals(x)也应该返回是“true”。<br/>
@@ -27,6 +28,7 @@ Java语言对equals方法的要求如下，这些要求是必须遵循的：
 
 
 eqauls方法和hashCode方法
+
       1. 如果两个对象相同，那么它们的hashCode值一定要相同；<br/>
       2. 如果两个对象的hashCode相同，它们并不一定相同（这里说的对象相同指的是用eqauls方法比较）。<br/>
       
