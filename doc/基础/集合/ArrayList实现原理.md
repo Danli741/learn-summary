@@ -1,6 +1,5 @@
 # ArrayList实现原理
 
----
 ## ArrayList概述
 > * ArrayList是基于数组实现的，是一个动态数组。
 > * ArrayList不是线程安全的，只能用在单线程环境下，多线程环境下可以考虑用Collections.synchronizedList(List   l)函数返回一个线程安全的ArrayList类，也可以使用concurrent并发包下的CopyOnWriteArrayList类。
@@ -61,8 +60,7 @@
 ```
 再看下ArrayList的定义
 ``` java
-    public class ArrayList<E> extends AbstractList<E>
-    implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+    public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, java.io.Serializable
 ```
 可以看出ArrayList继承AbstractList（这是一个抽象类，对一些基础的list操作进行封装，实现List、RandomAccess、Cloneable、Serializable几个接口。RandomAccess是一个标记接口，用来表明其支持快速随机访问。
 
@@ -75,7 +73,7 @@
 可以看到用一个Object数组来存储数据，用一个int值来计数，记录当前容器的数据大小。
 另外，细心的人会发现elementData数组是使用transient修饰的，关于transient关键字的作用简单说就是java自带默认机制进行序列化的时候，被其修饰的属性不需要维持。
 
-会不会产生一点疑问？elementData不需要维持，那么怎么进行反序列化，又怎么保证序列化和反序列化数据的正确性？难道不需要存储？用大腿想一下那当然是不可以的嘛，既然需要存储，它是怎么实现的呢？注意上面红色加粗的地方，默认序列化机制，嗯哼想明白了ArrayList一定是使用了自定义的序列化方式，到底是不是这样的呢？看下面两个方法：
+会不会产生一点疑问？elementData不需要维持，那么怎么进行反序列化，又怎么保证序列化和反序列化数据的正确性？ArrayList是使用了自定义的序列化方式，看下面两个方法：
 ``` java
 /**
      * Save the state of the <tt>ArrayList</tt> instance to a stream (that
