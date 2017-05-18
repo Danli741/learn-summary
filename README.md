@@ -1,6 +1,7 @@
 # 学习总结
 
-## Object
+## java.lang.Object
+* [Object类方法](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/Object/Object%E7%B1%BB%E6%96%B9%E6%B3%95.md)
 
 ## 基础
 
@@ -13,7 +14,8 @@
 * String
 
 ### 三、集合：
-* ArrayList
+* [ArrayList实现原理](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88/ArrayList%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
+* [ArrayList遍历方式测试](https://github.com/liuwei1989/learn-summary/blob/master/javacode/src/main/java/com/diyill/collection/ArrayListRandomAccessTest.java)
 * LinkedList
 * HashMap
 * LinkedHashMap
