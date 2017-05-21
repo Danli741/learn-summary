@@ -81,6 +81,8 @@
 * epoll
 
 ## 数据库
+* [事务](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E6%95%B0%E6%8D%AE%E5%BA%93/%E4%BA%8B%E5%8A%A1.md)
+* [MVCC浅析](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E6%95%B0%E6%8D%AE%E5%BA%93/MVCC%E6%B5%85%E6%9E%90.md)
 ### mysql
 * 常见存储引擎
 * innodb锁引原理
