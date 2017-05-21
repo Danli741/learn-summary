@@ -2,12 +2,12 @@
 
 ## LinkedList定义
 ``` java
-public class LinkedList<E> extends AbstractSequentialList<E>
-implements List<E>, Deque<E>, Cloneable,java.io.Serializable
+public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable,java.io.Serializable
 ```
 
 根据源码里的注释，我们可以知道： 
 （1）LinkedList可以进行所有List的操作，因为其实现了List接口，同时LinkedList可以存放任何元素，包括null； 
+
 （2）所有根据索引的查找操作都是按照双向链表的需要执行的，根据索引从前或从后开始搜索，并且从最靠近索引的一端开始。例如一个LindedList有5个元素，如果调用了get(2)方法，LinkedList将会从头开始搜索；如果调用get(4)方法，那么LinkedList将会从后向前搜索。这样做的目的可以提升查找效率。那如何做到这一点呢？在LinkedList内部有一个Node(int index)方法，它会判断从头或者从后开始查找比较快。代码如下：
 ``` java
 Node<E> node(int index) {
