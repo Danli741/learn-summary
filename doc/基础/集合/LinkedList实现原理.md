@@ -6,6 +6,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
 ```
 
 根据源码里的注释，我们可以知道： 
+
 （1）LinkedList可以进行所有List的操作，因为其实现了List接口，同时LinkedList可以存放任何元素，包括null； 
 
 （2）所有根据索引的查找操作都是按照双向链表的需要执行的，根据索引从前或从后开始搜索，并且从最靠近索引的一端开始。例如一个LindedList有5个元素，如果调用了get(2)方法，LinkedList将会从头开始搜索；如果调用get(4)方法，那么LinkedList将会从后向前搜索。这样做的目的可以提升查找效率。那如何做到这一点呢？在LinkedList内部有一个Node(int index)方法，它会判断从头或者从后开始查找比较快。代码如下：
@@ -31,6 +32,7 @@ List list = Collections.synchronizedList(new LinkedList(…));
 ```
 （4）LinedList的迭代器 iterator 和 listIterator 方法返回的迭代器是快速失败 的。所谓快速失败，意思就是如果在迭代器已经创建了的情况下，任何时刻对LinkedList结构的修改，迭代器将会抛出一个ConcurrentModificationException异常。
 
+
 ## LinkedList节点数据结构
 LinkedList每个节点是一个Node类型的实例，每个Node实例除了保存节点的真实值（即真实数据）外，还保存了这个节点的前一个节点的引用和后一个节点的引用，这样就实现了双线链表的数据结构。Node数据结构如下：
 ``` java
@@ -47,6 +49,7 @@ private static class Node<E> {
 }
 ```
 从代码中我们可以看到，当创建一个Node节点时，我们需要传入三个参数，第一个参数就是当前节点的前驱节点，第二个就是节点的真实数据，第三个就是节点的后继节点。
+
 
 ## 常用方法具体实现
 1、add(E e)方法：add(E e)方法实际上调用的是linkLast(E e)方法，意思是把方法加到链表的最后。下面看看linkLast(E e)方法的具体实现： 
