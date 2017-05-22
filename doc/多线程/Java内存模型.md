@@ -65,4 +65,5 @@ Java内存模型中规定了所有的变量都存储在主内存中，每条线�
 ![](http://images.cnitblog.com/i/475287/201403/091516513623330.png)
 
 [参考文章1](http://www.cnblogs.com/nexiyi/p/java_memory_model_and_thread.html)
+
 [参考文章2](http://blog.csdn.net/suifeng3051/article/details/52611310)
