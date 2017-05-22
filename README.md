@@ -1,17 +1,17 @@
 ## 学习总结
 
 ### java.lang.Object
-* [Object类方法](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/Object/Object%E7%B1%BB%E6%96%B9%E6%B3%95.md)
+> [Object类方法](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/Object/Object%E7%B1%BB%E6%96%B9%E6%B3%95.md)
 
 ### 基础
 
 #### 1. 基础语法
-    1. 位操作符总结（>>>）
+> * 位操作符总结（>>>）
     
 #### 2. 包装类（源码阅读）
-* Integer
-* Long
-* String
+> * Integer
+> * Long
+> * String
 
 #### 3. 集合框架（源码阅读）
 * [ArrayList实现原理](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88/ArrayList%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
