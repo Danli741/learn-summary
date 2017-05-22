@@ -80,7 +80,7 @@
 
 
 #### 6. 多线程
-* Java内存模型
+* [Java内存模型](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 * 线程通信
 * 多线程同步
 * Java线程池
