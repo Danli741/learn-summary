@@ -125,6 +125,29 @@ private abstract class HashIterator<E> implements Iterator<E> {
         expectedModCount = modCount;
     }
 }
+
+public V put(K key, V value) {
+    if (table == EMPTY_TABLE) {
+        inflateTable(threshold);
+    }
+    if (key == null)
+        return putForNullKey(value);
+    int hash = hash(key);
+    int i = indexFor(hash, table.length);
+    for (Entry<K,V> e = table[i]; e != null; e = e.next) {
+        Object k;
+        if (e.hash == hash && ((k = e.key) == key || key.equals(k))) {
+            V oldValue = e.value;
+            e.value = value;
+            e.recordAccess(this);
+            return oldValue;
+        }
+    }
+
+    modCount++;
+    addEntry(hash, key, value, i);
+    return null;
+}
 ```
 
 通过研究源码，可以发现HashMap在添加、删除或修改元素时，都会执行modCount++，所有在使用迭代器遍历HashMap时，如果有其他线程对该HashMap进行了结构性的操作时，迭代器会发现并抛出ConcurrentModificationException异常。
@@ -215,7 +238,8 @@ final Entry<K,V> getEntry(Object key) {
 }
 ```
 可以看出，get方法的实现相对简单，key(hashcode)-->hash-->indexFor-->最终索引位置，找到对应位置table[i]，再查看是否有链表，遍历链表，通过key的equals方法比对查找对应的记录。要注意的是，有人觉得上面在定位到数组位置之后然后遍历链表的时候，e.hash == hash这个判断没必要，仅通过equals判断就可以。其实不然，试想一下，如果传入的key对象重写了equals方法却没有重写hashCode，而恰巧此对象定位到这个数组位置，如果仅仅用equals判断可能是相等的，但其hashCode和当前对象不一致，这种情况，根据Object的hashCode的约定，不能返回当前对象，而应该返回null。
-　　
+　
+
 [参考文章1](http://www.cnblogs.com/chengxiao/p/6059914.html)
 
 [参考文章2](http://blog.csdn.net/zz_cl/article/details/52493162)
