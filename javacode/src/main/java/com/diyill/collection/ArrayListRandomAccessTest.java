@@ -1,9 +1,6 @@
 package com.diyill.collection;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author liuwei

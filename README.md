@@ -17,7 +17,8 @@
 * [ArrayList实现原理](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88/ArrayList%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
 * [ArrayList遍历方式测试](https://github.com/liuwei1989/learn-summary/blob/master/javacode/src/main/java/com/diyill/collection/ArrayListRandomAccessTest.java)
 * [LinkedList实现原理](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88/LinkedList%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
-* HashMap
+* [HashMap实现原理](https://github.com/liuwei1989/learn-summary/blob/master/doc/%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
+* [Java8重新认识HashMap](http://tech.meituan.com/java-hashmap.html)
 * LinkedHashMap
 * TreeMap
 * HashSet
