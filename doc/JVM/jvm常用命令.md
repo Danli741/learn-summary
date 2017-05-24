@@ -28,10 +28,10 @@
     
 示例：
 > ➜ ~ jinfo 10565 
-➜ ~ jinfo -flag CICompilerCount 10565 
-➜ ~ jinfo -flag +PrintGCDetails 
-➜ ~ jinfo -flag -PrintGCDetails 10532 
-➜ ~ jinfo -flag CMSInitiatingOccupancyFraction=80 10532 
+> ➜ ~ jinfo -flag CICompilerCount 10565 
+> ➜ ~ jinfo -flag +PrintGCDetails 
+> ➜ ~ jinfo -flag -PrintGCDetails 10532 
+> ➜ ~ jinfo -flag CMSInitiatingOccupancyFraction=80 10532 
     
 ### 3. jstack
 作用：
@@ -39,8 +39,9 @@
     
 参数：
 > -F：当正常输出的请求不被响应时，强制输出线程堆栈。
--l：除堆栈外，显示关于锁的附加信息。
--m：如果调用到本地方法的话，可以显示C/C++的堆栈 
+> -l：除堆栈外，显示关于锁的附加信息。
+> -m：如果调用到本地方法的话，可以显示C/C++的堆栈 
+
 命令格式:jstack [option] vmid。
 
 示例：
@@ -68,16 +69,16 @@
 
 示例：
 > ➜ ~ jstat -class 10532 
-➜ ~ jstat -gc 10532 
-➜ ~ jstat -gccapacity 10532 
-➜ ~ jstat -gcutil 10532 
-➜ ~ jstat -gccause 10532 
-➜ ~ jstat -gcnew 10532 
-➜ ~ jstat -gcnewcapacity 10532 
-➜ ~ jstat -gcold 10532 
-➜ ~ jstat -gcoldcapacity 10532 
-➜ ~ jstat -compiler 10532 
-➜ ~ jstat -printcompilation 10532 
+> ➜ ~ jstat -gc 10532 
+> ➜ ~ jstat -gccapacity 10532 
+> ➜ ~ jstat -gcutil 10532 
+> ➜ ~ jstat -gccause 10532 
+> ➜ ~ jstat -gcnew 10532 
+> ➜ ~ jstat -gcnewcapacity 10532 
+> ➜ ~ jstat -gcold 10532 
+> ➜ ~ jstat -gcoldcapacity 10532 
+> ➜ ~ jstat -compiler 10532 
+> ➜ ~ jstat -printcompilation 10532 
     
 ### 5. jmap
 
@@ -94,9 +95,9 @@
 
 示例：
 > ➜ ~ jmap -heap 10532 
-➜ ~ jmap -histo 10532 | more 
-➜ ~ jmap -F 10532 
-➜ ~ jmap -finalizerinfo 10532 
+> ➜ ~ jmap -histo 10532 | more 
+> ➜ ~ jmap -F 10532 
+> ➜ ~ jmap -finalizerinfo 10532 
     
 ### 6. jconsole
 
