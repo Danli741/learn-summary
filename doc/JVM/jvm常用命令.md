@@ -6,15 +6,22 @@
     
 参数：
 > -l ：输出主类全名。
+
 > -v：输出虚拟机进程启动的jvm参数。
+
 > -m：输出启动时传递给main函数的参数。
+
 > -q：只输出LVMID，省略主类的名称。
     
 示例：
 > ➜ ~ jps 
+
 > ➜ ~ jps -l 
+
 > ➜ ~ jps -v 
+
 > ➜ ~ jps -m 
+
 > ➜ ~ jps -q 
     
 ### 2. jinfo
@@ -23,14 +30,20 @@
     
 参数：
 > -flag< name >: 打印指定Java虚拟机的参数值。
+
 > -flag [+|-]<name     >：设置或取消指定java虚拟机参数的布尔值。
+
 > -flag < name >=< value >：设置指定java虚拟机的参数的值。
     
 示例：
 > ➜ ~ jinfo 10565 
+
 > ➜ ~ jinfo -flag CICompilerCount 10565 
+
 > ➜ ~ jinfo -flag +PrintGCDetails 
+
 > ➜ ~ jinfo -flag -PrintGCDetails 10532 
+
 > ➜ ~ jinfo -flag CMSInitiatingOccupancyFraction=80 10532 
     
 ### 3. jstack
@@ -39,15 +52,20 @@
     
 参数：
 > -F：当正常输出的请求不被响应时，强制输出线程堆栈。
+
 > -l：除堆栈外，显示关于锁的附加信息。
+
 > -m：如果调用到本地方法的话，可以显示C/C++的堆栈 
 
 命令格式:jstack [option] vmid。
 
 示例：
 > ➜ ~ jstack -F 10532 
-➜ ~ jstack -l 10532 
-➜ ~ jstack -m 10532 
+
+> ➜ ~ jstack -l 10532 
+
+> ➜ ~ jstack -m 10532 
+
     
 ### 4. jstat
 作用：
@@ -69,15 +87,25 @@
 
 示例：
 > ➜ ~ jstat -class 10532 
+
 > ➜ ~ jstat -gc 10532 
+
 > ➜ ~ jstat -gccapacity 10532 
+
 > ➜ ~ jstat -gcutil 10532 
+
 > ➜ ~ jstat -gccause 10532 
+
 > ➜ ~ jstat -gcnew 10532 
+
 > ➜ ~ jstat -gcnewcapacity 10532 
+
 > ➜ ~ jstat -gcold 10532 
+
 > ➜ ~ jstat -gcoldcapacity 10532 
+
 > ➜ ~ jstat -compiler 10532 
+
 > ➜ ~ jstat -printcompilation 10532 
     
 ### 5. jmap
@@ -95,8 +123,11 @@
 
 示例：
 > ➜ ~ jmap -heap 10532 
+
 > ➜ ~ jmap -histo 10532 | more 
+
 > ➜ ~ jmap -F 10532 
+
 > ➜ ~ jmap -finalizerinfo 10532 
     
 ### 6. jconsole
