@@ -12,10 +12,13 @@ package com.diyill.idworker;
  */
 public class SnowflakeIdWorker {
 
-    //2017/5/27 14:38:00
+    //起始时间 2017/5/27 14:38:00
     private final long twepoch = 1495867080000L;
+    //最大区域7
     private final long regionIdBits = 3L;
+    //最大机器编号1024
     private final long workerIdBits = 10L;
+    //同一毫秒内最多生成1024个序列
     private final long sequenceBits = 10L;
 
     private final long timestampShift = sequenceBits + workerIdBits + regionIdBits;
@@ -57,6 +60,7 @@ public class SnowflakeIdWorker {
         } else {
             this.sequence = 0L;
         }
+        //防止时钟变更
         if(timestamp < this.lastTimestamp){
             try {
                 throw new Exception(String.format("Clock moved backwards. Refusing to generate id for %d milliseconds",
