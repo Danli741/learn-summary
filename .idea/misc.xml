@@ -4,6 +4,9 @@
     <entry_points version="2.0" />
   </component>
   <component name="IdProvider" IDEtalkID="3D208C1447D04EA16F050712F4DD6328" />
+  <component name="KiteWelcome">
+    <option name="showWelcome" value="false" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -245,4 +248,3 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
-
