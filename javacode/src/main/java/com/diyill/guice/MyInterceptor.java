@@ -4,7 +4,6 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/22 下午2:36
  * @description 功能描述
  * @see

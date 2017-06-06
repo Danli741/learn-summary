@@ -1,7 +1,6 @@
 package com.diyill.jvm;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/18 上午10:13
  * @description 相同大小内存分配 JVM 参数-XX:+PrintGCDetails -Xmx20M -Xms20M 运行代码
  * @see
