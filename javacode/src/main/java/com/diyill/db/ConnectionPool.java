@@ -5,7 +5,6 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/26 下午3:05
  * @description 功能描述
  * @see
