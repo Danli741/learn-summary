@@ -6,7 +6,6 @@ import com.google.inject.matcher.Matchers;
 import com.google.inject.name.Names;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/22 下午2:00
  * @description 功能描述
  * @see

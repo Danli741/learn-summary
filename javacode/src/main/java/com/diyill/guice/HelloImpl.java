@@ -3,7 +3,6 @@ package com.diyill.guice;
 import com.google.inject.Singleton;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/22 下午2:00
  * @description 功能描述
  * @see

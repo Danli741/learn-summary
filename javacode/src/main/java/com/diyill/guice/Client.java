@@ -6,7 +6,6 @@ import com.google.inject.Injector;
 import com.google.inject.Module;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/22 下午2:04
  * @description 功能描述
  * @see

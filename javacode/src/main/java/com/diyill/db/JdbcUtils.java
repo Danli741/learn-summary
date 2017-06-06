@@ -7,7 +7,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * @author liuxiaobin@58ganji.com
  * @version 2017/5/25 上午11:21
  * @description 功能描述
  * @see
